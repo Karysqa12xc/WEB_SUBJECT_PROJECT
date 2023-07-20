@@ -1,0 +1,104 @@
+body{
+    background: linear-gradient(120deg, #11998e, #38ef7d);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: var(--white-color);
+    border-radius: 9px;
+    margin: 3.4% auto;
+    position: relative;
+}
+.container-logIn{
+    margin: 12.9% auto;
+}
+.container-NoticeOfSignUp{
+    width: 600px;
+    background-color: var(--white-color);
+    border-radius: 9px;
+    margin: 23% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container__notice{
+    text-align: center;
+    
+}
+.container__moveToLogin{
+    text-align: center;
+    font-size: 2rem;
+}
+form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+}
+h1{
+    font-size: 3.2rem;
+}
+h2{
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 2.2rem;
+}
+.form__control{
+    display: flex;
+    flex-direction: column; 
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+}
+.form__control-inpName{
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+}
+.form_control-inp{
+    width: 95%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--text-color);
+}
+.form_control-inp-errorTotal{
+    width: 95%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--invalid-color);
+}
+.form_control-inp:focus{
+    border-bottom: 3px solid var(--fb-color);
+}
+.form__control-submit{
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin: 15px auto;
+    background: var(--fb-color);
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+}
+.container-msgErrorTotal{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--invalid-color);
+}
+.form_control-mgsError{
+    font-size: 1.2rem;
+    color: var(--invalid-color);
+    padding-top: 2px;
+}
+.form__control-submit:hover{
+    background-color: #11998e;
+}
+.from__control-fiedldPass{
+    display: flex;
+}
+p{
+    font-size: 1.2rem;
+    margin: auto;
+}
+

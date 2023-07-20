@@ -1,0 +1,102 @@
+
+:root {
+    --primary-color: #f05123;
+    --black-color: #000;
+    --white-color: #ffffff;
+    --gray-color: #666;
+    --text-color: #333;
+    --yellow-color: #fed810;
+    --plum-color: #b80257;
+    --fb-color: #4080ff;
+    --mail-color: #f47425;
+    --invalid-color: #f33a58;
+    --desc-color: #0000008a;
+    --button-color: #1dbfaf;
+    --green-color: #38ef7d;
+    --button-color-2: #fe2c55;
+    --hover-1: #e8ebed;
+    --header-height: 120px;
+    --shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+/* Animation */
+@keyframes faceIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes goRight {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 1px;
+    }
+}
+@keyframes  goUp{
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+@keyframes headerNoticeGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes example {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes example {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes moveRight{
+    from{
+        right: 0%;
+    }to{
+        right: 100%;
+    }
+}

@@ -1,0 +1,624 @@
+/* Css bên phần trang chủ */
+.app__nav--menu {
+    background: linear-gradient(to top right, #e66465, #9198e5);
+    position: sticky;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    box-shadow: var(--shadow);
+    z-index: 100;
+}
+
+.app__nav--logoAndSearch {
+    display: flex;
+    align-items: center;
+}
+
+.app__nav--logoAndSearch a i {
+    color: var(--white-color);
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+
+.app__nav--logo-link {
+    text-decoration: none;
+    font-size: 3.0rem;
+    padding-left: 15px;
+}
+
+.app__nav--search {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 230px;
+    height: 30px;
+    margin-right: 15px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 1.4rem;
+    padding-left: 15px;
+}
+.app__nav--searchBtn{
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+.app__nav--manageRegistration {
+    padding-left: 15px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.app__nav--manageRegistration-list {
+    list-style: none;
+    padding-left: 0;
+    margin-right: 15px;
+}
+
+.app__nav--manageRegistration-item {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.app__nav--manageRegistration-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.app__nav--manageRegistration-link:hover {
+    text-decoration: underline;
+    color: var(--fb-color);
+}
+
+.app__nav--MenuHeight {
+    flex: 1;
+}
+
+.app__nav--list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+
+}
+
+.app__nav--item {
+    display: flex;
+    align-items: center;
+}
+
+.app__nav--item+.app__nav--item {
+    margin-left: 20px;
+}
+
+.app__nav--link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.app__nav--link:hover {
+    text-decoration: underline;
+    color: var(--fb-color);
+}
+
+.app__nav--link i {
+    padding-left: 5px;
+}
+
+.app__nav--ReginstrationNotEmpty {
+    position: relative;
+    margin-right: 50px;
+}
+
+.app__nav--ReginstrationNotEmpty-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.app__nav--ReginstrationNotEmpty-item {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    flex-direction: column;
+}
+
+.app__nav--ReginstrationNotEmpty-action {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: var(--white-color);
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    color: var(--black-color);
+    display: none;
+
+}
+
+.app__nav-action-item {
+    list-style: none;
+    padding-left: 0;
+}
+
+.app__nav-action-item {
+    padding: 5px;
+}
+
+.app__nav--ReginstrationNotEmpty-action::before {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    top: -10px;
+}
+
+.app__nav--ReginstrationNotEmpty-link {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.app__nav--ReginstrationNotEmpty-link:hover {
+    color: var(--fb-color);
+}
+
+.app__nav--ReginstrationNotEmpty-list:hover .app__nav--ReginstrationNotEmpty-action {
+    display: block;
+}
+
+.app__nav--imageRepresent {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 30px;
+    object-position: top;
+    background-color: var(--white-color);
+}
+
+.app__mainOfUser {
+    display: grid;
+    grid-template-columns: 0.32fr 0.5fr 0.4fr;
+    margin: 5% auto;
+    /* grid-gap: 5%; */
+    grid-template-areas:
+        "h1 h2 h3";
+}
+
+.app__mainOfUser-contentLeft {
+    grid-area: h1;
+    position: fixed;
+}
+
+.app__mainOfUser-contentMid {
+    grid-area: h2;
+    z-index: 99;
+}
+
+.app__mainOfUser-contentRight {
+    grid-area: h3;
+    position: fixed;
+    right: 0;
+}
+.app__contentRight-displayAllFriendOfUser{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* CSS phần chỉnh sửa bài viết */
+.app__displayPostSetting-element{
+    width: 100px;
+    box-shadow: var(--shadow);
+    background: var(--white-color);
+    border-radius: 20px;
+    float: right;
+    margin-top: -35px;
+    margin-right: 5px;
+}
+.app__displayPostSetting-element:hover{
+    background-color: var(--hover-1);
+}
+.app__displayPostSetting-list{
+    padding-left: 0;
+    list-style: none;
+}
+.app__displayPostSetting-item{
+    text-align: center;
+}
+.app__displayPostSetting-Form{
+    display: none;
+}
+
+/* Sử dụng rule của Css */
+#app__displayPostSettingTarget_{$post_id}:target {
+    display: block;
+}
+.app__displayPostSetting-FormRemove{
+    display: none;
+}
+#app__displayPostSettingTargetRemovePost_{$post_id}:target{
+    display: block;
+}
+
+.app__displayPostSetting-close{
+    color: var(--black-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: #efefef;
+    border: 1px solid black;
+    width: 60px;
+    height: 24px;
+}
+.app__displayPostSetting-close:hover{
+    color: var(--button-color-2);
+}
+.app__displayPostSetting-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+}
+.app__displayPostSetting-link:hover{
+    color: var(--fb-color);
+}
+.app__contentMid-postPage {
+    text-decoration: none;
+}
+.app__contentLeft-top-total{
+    padding-bottom: 15px;
+}
+.app__contentLeft-top-list {
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.app__contentLeft-top-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    margin-left: 15px;
+    object-fit: cover;
+    object-position: top;
+}
+.app__contentLeft-top-descriptOfFriends{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.app__contentMid-addPostLink {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+.app__contentMid-contentPost {
+    padding-top: 15px;
+    font-size: 1.5rem;
+
+}
+
+.app__contentMid-addPostLink:hover {
+    background-color: var(--hover-1);
+}
+
+.app__contentMid-addPostLink-list {
+    color: var(--black-color);
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.app__contentMid-addPostLink-list:hover {
+    color: var(--fb-color);
+}
+
+.app__contentMid-addPostLink-item {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.app__contentMid-addPost {
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    width: 100%;
+    box-shadow: var(--shadow);
+    display: none;
+}
+
+#addPost:target {
+    display: block;
+}
+
+.app__contentMid-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__contentMid-title-close {
+    background-color: var(--hover-1);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.app__contentMid-image {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.app__contentMid-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__contentMid-fieldImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    align-items: center;
+    border: 1px dashed var(--black-color);
+    margin: 15px 30px;
+
+}
+
+.app__contentMid-DragImage {
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.app__contentMid-chooseImage {
+    margin-left: 90px;
+}
+
+.app__contentMid-submitImage {
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 40px;
+    border: none;
+    background-color: var(--fb-color);
+    color: var(--white-color);
+    text-align: center;
+    margin: 15px 70px;
+}
+
+.app__contentMid-submitImage:hover {
+    opacity: 0.9;
+}
+
+.app__contentMid-displayPost {
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.app__contentMid-displayPost {
+    margin-top: 20px;
+}
+
+.app__contentMid-chooseImage {
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.app__displayPost-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.app__contentMid-disableImage {
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 40px;
+    border: none;
+    background-color: var(--button-color-2);
+    color: var(--white-color);
+    text-align: center;
+    margin: 15px 70px;
+}
+
+.app__displayPostForm {
+    display: flex;
+}
+
+.app__displayPost-like {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 10%;
+    border-radius: 90px;
+    border: none;
+    background-color: var(--fb-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--white-color);
+
+}
+.app__displayPost-countLike{
+    color: var(--white-color);
+}
+.app__displayPost-like:hover {
+    background-color: var(--button-color-2);
+}
+
+.app__displayPost-content {
+    width: 100%;
+    height: 100%;
+}
+
+.app__contentMid-displayPost-image {
+    width: 100%;
+    height: 100%;
+}
+
+.app__contentMid-contentPost {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.app__contentRight-Sponsor-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.app__contentLeft-footer-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app__contentLeft-footer-item {
+    flex: 1;
+    padding: 5px;
+}
+
+.app__contentRight-Sponsor-item:hover {
+    background-color: var(--hover-1);
+    border-radius: 15px;
+}
+
+.app__contentRight-Sponsor-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.app__contentRight-Sponsor-img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Css bên phần trang cá nhân */
+.app__mainOfUser-tableInfo {
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(180deg, #0ccdbd, #1fe76c);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.infoPersonal {
+    margin-bottom: 55px;
+}
+
+.edditingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edditingInfo-link {
+    padding-right: 30px;
+    font-size: 1.8rem;
+}
+
+.eddtingImageBg {
+    width: 100%;
+    display: none;
+}
+
+#eddtingImage:target {
+    display: block;
+}
+
+
+.eddtingPassBg,
+.eddtingPhoneBg,
+.eddtingBioBg,
+.eddtingEmailBg {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin: auto;
+    display: none;
+}
+
+#eddtingBio:target,
+#eddtingPhone:target,
+#eddtingPass:target,
+#eddtingEmail:target{
+    display: block;
+}
+.edditingHandlePass,.edditingHandlePhone,.edditingHandleBio,.edditingHandleEmail{
+    display: flex;
+    justify-content: space-around;
+}
+/* CSS cho phần trang hiện thị thông báo kết bạn */
+.editingInfo-list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.editingInfo-item{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.editingInfo-description{
+    color: var(--white-color);
+    margin-left: 15px;
+}
+.BtnAgree{
+    border-radius: 15px;
+    background-color: var(--fb-color);
+    margin-top: 15px;
+    box-shadow: var(--shadow);
+    color: var(--white-color);
+}
+.BtnRefuse{
+    border-radius: 15px;
+    background-color: var(--button-color-2);
+    margin-top: 15px;
+    box-shadow: var(--shadow);
+    color: var(--white-color);
+}
+.BtnRefuse:hover,.BtnAgree:hover{
+    opacity: 0.7;
+}
